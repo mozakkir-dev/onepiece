@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  /* Creates 3 equal columns */
+  grid-template-columns: 1fr 0.5fr 05fr; 
+  /* Creates 2 rows (adjust height as needed) */
+  grid-template-rows: 1fr 1fr ; 
+  gap: 16px; /* Space between the boxes */
+  padding: 16px;
+}
+
+/* Base styling for all boxes */
+.box {
+  background-color: #e0e0e0;
+  border: 2px solid #333;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Makes the first box twice as wide, taking up the 1fr ratio */
+.box-1 {
+  grid-column: span ; 
+  background-color: #4A90E2; /* Distinct color to highlight it */
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+  <div class="box box-1">Box 1 (1fr equivalent)</div>
+  <div class="box">Box 2 (0.5fr equivalent)</div>
+  <div class="box">Box 3 (0.5fr equivalent)</div>
+  <div class="box">Box 4 (0.5fr equivalent)</div>
+  <div class="box">Box 5 (0.5fr equivalent)</div>
+</div>
+</body>
+</html>

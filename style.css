@@ -6,6 +6,7 @@
 
 .img_container {
     background-image: url(image/one\ piece\ bg2.jpg); 
+    
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
@@ -57,7 +58,7 @@
     object-fit: cover; 
     
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:560px){
     .container{
         display: grid;
         grid-template-columns: 1fr;
